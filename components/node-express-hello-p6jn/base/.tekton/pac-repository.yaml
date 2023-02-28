@@ -1,0 +1,15 @@
+apiVersion: pipelinesascode.tekton.dev/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    appstudio.openshift.io/application: node-hello
+    appstudio.openshift.io/component: node-express-hello-p6jn
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: node-express-hello-p6jn
+  namespace: bsutter-tenant
+spec:
+  url: https://github.com/burrzinga/node-express-hello
